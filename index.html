@@ -2,33 +2,30 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/font.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="relative m-0">
         <div class="container">
             <!-- Navigation Start -->
-            <nav class="nav-menu flex width-100 relative pb-2 mt-2">
-            <!-- <div class="blur">
-
-            </div> -->
-            <div class="menu-content">
-                <h1 class="logo m-0">Hi! I am Pinky</h1>
-            </div>
-            <div class="menu-content">
-                <ul class="flex m-0 p-0">
-                    <li><a href="#" class="p-1 mx-1">Home</a></li>
-                    <li><a href="#" class="p-1 mx-1">Work</a></li>
-                    <li><a href="#" class="p-1 mx-1">About</a></li>
-                    <li><a href="#" class="p-1 mx-1">Contact</a></li>
-                </ul>
-            </div>
+            <nav class="nav-menu flex width-100 relative pb-3 mt-3">
+                <div class="menu-content flex align-items-center">
+                    <img src="images/medium-avatar.jpg" width="32px" height="32px" class="border-radius-16">
+                    <h1 class="logo m-0 mx-1">Hi! I am Pinky</h1>
+                </div>
+                <div class="menu-content">
+                    <ul class="flex m-0 p-0">
+                        <li><a href="index.html" class="p-1 mx-1">Work</a></li>
+                        <li><a href="#about" class="p-1 mx-1">About</a></li>
+                        <li><a href="#contact" class="p-1 mx-1">Contact</a></li>
+                        <li><a href="images/Pinki UX Designer.pdf" target="_blank" class="btn">✨ Download Resume</a></li>
+                    </ul>
+                </div>
             </nav>
             <!-- Navigation End -->
 
             <!-- Banner Start -->
-            <div class="mt-2 relative">
+            <div class="mt-5 relative">
                 <video width="100%" class="width-100 border-radius-16 header-img" autoplay muted>
                     <source src="images/video.mp4" type="video/mp4">
                 </video>
@@ -37,40 +34,231 @@
             </div>
             <!-- Banner End -->
         </div>
+        
         <!-- Work Start -->
         <div class="my-6">
-            <!-- <marquee behavior="scroll" class="moving-text">Recent Projects &#149; Recent Projects &#149; Recent Projects</marquee> -->
-            <div class="marquee relative flex">
+            <!-- <div class="marquee relative flex">
                 <p class="moving-text m-0">&nbsp;Recent Projects &#149;</p>
                 <p class="moving-text m-0">&nbsp;Recent Projects &#149;</p>
                 <p class="moving-text m-0">&nbsp;Recent Projects &#149;</p>
-            </div>
+            </div> -->
         </div>
         <!-- Work End -->
+         
          <div class="container">
-            <div class="work mt-3">
-                <ul class="flex flex-wrap">
-                    <li class="flex-item-50">
-                        <div class="p-2 border-radius-16">
-                            <p class="title m-0 mb-2">Contra App</p>
-                            <a href="#" class="relative block">
-                                <img src="images/contra.jpg" class="width-100 border-radius-8" alt="">
-                            </a>
+            <!-- Tabs Start -->
+            <div class="work-container">
+                <div class="tabs">
+                    <ul class="flex">
+                        <li><a href="javascript:void(0)" id="tab1" class="p-2 tab-link active">UX Design</a></li>
+                        <li><a href="javascript:void(0)" id="tab2" class="p-2 tab-link">Front-End</a></li>
+                        <li><a href="javascript:void(0)" id="tab3" class="p-2 tab-link">Graphic</a></li>
+                        <li><a href="javascript:void(0)" id="tab4" class="p-2 tab-link">Motion</a></li>
+                    </ul>
+                </div>
+                <!-- Tabs Ends -->
+                <!-- Tab Content 1 Start -->
+                <div class="work work1 mt-5 active">
+                    <ul class="flex flex-wrap">
+                        <li class="flex-item-50 mb-4">
+                            <div class="p-2 border-radius-16">
+                                <p class="title m-0 pb-2">Contra App</p>
+                                <a href="contra.html" class="relative block">
+                                    <img src="images/contra.png" class="width-100 border-radius-8" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex-item-50 mb-4">
+                            <div class="p-2 border-radius-16">
+                                <p class="title m-0 pb-2">Wimo</p>
+                                <a href="#" class="relative block">
+                                    <img src="images/wimo.png" class="width-100 border-radius-8" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex-item-50 mb-4">
+                            <div class="p-2 border-radius-16">
+                                <p class="title m-0 pb-2">Design System</p>
+                                <a href="#" class="relative block">
+                                    <img src="images/atomic.png" class="width-100 border-radius-8" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex-item-50">
+                            
+                        </li>
+                    </ul>
+                </div>
+                <!-- Tab Content 1 Ends -->
+                <!-- Tab Content 2 Start -->
+                <div class="work work2 mt-5">
+                    <ul class="flex flex-wrap">
+                        <li class="flex-item-50 mb-4">
+                            <div class="p-2 border-radius-16">
+                                <p class="title m-0 pb-2">Calculator</p>
+                                <a href="https://pinky-nadar.github.io/calculator/" target="_blank" class="relative block">
+                                    <img src="images/calc.png" class="width-100 border-radius-8" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex-item-50">
+                            
+                        </li>
+                    </ul>
+                </div>
+                <!-- Tab Content 2 Ends -->
+                <div class="work work3 mt-5">
+                    <ul class="flex flex-wrap">
+                        <li class="flex-item-50 mb-4">
+                            <div class="p-2 border-radius-16">
+                                <p class="title m-0 pb-2">Instacart Illustration</p>
+                                <a href="" class="relative block">
+                                    <img src="images/instacart.png" class="width-100 border-radius-8" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex-item-50">
+                            
+                        </li>
+                    </ul>
+                </div>
+                <!-- Tab Content 3 Ends -->
+                <div class="work work4 mt-5">
+                    <ul class="flex flex-wrap">
+                        <li class="flex-item-50 mb-4">
+                            
+                        </li>
+                        <li class="flex-item-50">
+                            
+                        </li>
+                    </ul>
+                </div>
+                <!-- Tab Content 4 Ends -->
+            </div>
+            <!-- Tabs Ends -->
+
+            <br><br><br>
+
+            <!-- About me -->
+            <h2 class="heading" id="about">Behind the Design</h2>
+            <div class="card">
+                <div class="about flex mx-2-n">
+                    <div class="image flex-item-30 px-2">
+                        <div class="relative">
+                            <img src="images/image.png" class="border-radius-8" alt="">
                         </div>
+                    </div>
+                    <div class="Content flex-item-70 px-2">
+                        <ul>
+                            <li>✨ Crafting usable interfaces and experience since 2019</li>
+                            <li>✨ Guiding young designers to create a user-friendly interface</li>
+                            <li>✨ Expert in Front-end Development</li>
+                            <li>✨ Engineer turned Designer</li>
+                        </ul>
+                        <br>
+                        <p>I started my career from being a Front-end developer where I have learned solid technical skills. I transitioned to UX Design in 2019 where I got a chance to design the interface for an web application. It motivated me to create usable designs for the end-users. From then, I've been working on the human-centered design principles to create user interfaces with good user experience.</p>
+                        <br>
+                        <p>Tools, frameworks & technologies I have experience working with:</p>
+                        <ul>
+                            <li>- Figma, Adobe XD, Sketch</li>
+                            <li>- Mural, Figjam, Miro, Visio</li>
+                            <li>- Adobe Creative Suite (Photoshop, Illustrator, After Effects)</li>
+                            <li>- Visual Studio Code, Github, Zeplin</li>
+                            <li>- HTML, CSS, JavaScript, React</li>
+                            <li>- Webflow, Framer, WordPress</li>
+                            <li>- UserZoom, Pendo, Loom</li>
+                            <li>- Jira, Notion, Aha!, Trello, Asana</li>
+                            <li>- AI Tools: ChatGPT, Perplexity, Copilot etc.</li>
+                            <li>(Too many to list)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- About me -->
+            <br><br><br>
+            <!-- Articles start -->
+            <h3 class="heading">Articles</h3>
+            <div class="articles mt-5">
+                <ul class="flex mx-2-n">
+                    <li class="flex-item-30 px-2 relative">
+                        <a href="https://medium.com/@umamaheshwari4795/mastering-effective-communication-with-stakeholders-bdd353a1bb9b" target="_blank" class="flex p-3 card">
+                            <img src="images/medium1.jpg" class="article-img flex-item-30 border-radius-8" alt="">
+                            <div>
+                                <div class="flex-grow-1 article-title">Mastering Effective Communication with Stakeholders</div>
+                                <div class="color2 size12 mt-1">2 min read</div>
+                                <div class="flex align-items-center mt-1 pt-1 avatar"> 
+                                    <img src="images/medium-avatar.jpg" width="24px" height="24px" class="border-radius-16">
+                                    <span class="color2 px-1 size13">Pinky Nadar</span>
+                                </div>
+                            </div>
+                        </a>
                     </li>
-                    <li class="flex-item-50">
-                        <div class="p-2 border-radius-16">
-                            <p class="title m-0 mb-2">Wimo</p>
-                            <a href="#" class="relative block">
-                                <img src="images/wimo.jpg" class="width-100 border-radius-8" alt="">
-                            </a>
-                        </div>
+                    <li class="flex-item-30 px-2 relative">
+                        <a href="https://medium.com/@umamaheshwari4795/design-debt-6505cf22005f" target="_blank" class="flex p-3 card">
+                            <img src="images/medium2.jpg" class="article-img flex-item-30 border-radius-8" alt="">
+                            <div>
+                                <div class="flex-grow-1 article-title">Design debt is like the hidden clutter in a closet</div>
+                                <div class="color2 size12 mt-1">2 min read</div>
+                                <div class="flex align-items-center mt-1 pt-1 avatar"> 
+                                    <img src="images/medium-avatar.jpg" width="24px" height="24px" class="border-radius-16">
+                                    <span class="color2 px-1 size13">Pinky Nadar</span>
+                                </div>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
-         </div>
-         <footer class="mb-2">
+            <!-- Articles ends -->
 
+            <br><br><br>
+
+            <!-- Contact -->
+            <h3 class="heading" id="contact">Let's Connect</h3>
+            <div class="contact mt-5">
+                <ul class="flex mx-2-n">
+                    <li class="flex-item-30 px-2 relative">
+                        <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-3 behance">
+                            <img src="images/behance.svg" class="icon" alt="">
+                            <span class="flex-grow-1 mt-3">Behance</span>
+                        </a>
+                    </li>
+                    <li class="flex-item-30 px-2">
+                        <a href="mailto:umamaheshwari4795@gmail.com" class="flex align-items-center p-3 mail">
+                            <img src="images/gmail.svg" class="icon" alt="">
+                            <span class="flex-grow-1 mt-3">Mail</span>
+                        </a>
+                    </li>
+                    <li class="flex-item-30 px-2">
+                        <a href="https://www.linkedin.com/in/pinky-nadar-6613b4108/" target="_blank" class="flex align-items-center p-3 linkedin">
+                            <img src="images/linkedin.svg" class="icon" alt="">
+                            <span class="flex-grow-1 mt-3">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="flex-item-30 px-2">
+                        <a href="https://dribbble.com/pinky_nadar" target="_blank" class="flex align-items-center p-3 dribble">
+                            <img src="images/dribble.svg" class="icon" alt="">
+                            <span class="flex-grow-1 mt-3">Dribble</span>
+                        </a>
+                    </li>
+                    <li class="flex-item-30 px-2">
+                        <a href="https://medium.com/@umamaheshwari4795" target="_blank" class="flex align-items-center p-3 medium">
+                            <img src="images/medium.svg" class="icon" alt="">
+                            <span class="flex-grow-1 mt-3">Medium</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            
+            <br><br><br>
+            <br><br><br>
+            
+         </div>
+         <footer class="footer mb-2">
+            <p class="text-center color2">Designed & Developed by Me ❤️</p>
          </footer>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
 </html>
+
