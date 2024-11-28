@@ -1,5 +1,7 @@
 <html>
     <head>
+        <title>Pinky Nadar</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -8,24 +10,33 @@
     <body class="relative m-0">
         <div class="container">
             <!-- Navigation Start -->
-            <nav class="nav-menu flex width-100 relative pb-3 mt-3">
+            <nav class="nav-menu flex width-100 relative pb-2 mt-2">
                 <div class="menu-content flex align-items-center">
                     <img src="images/medium-avatar.jpg" width="32px" height="32px" class="border-radius-16">
                     <h1 class="logo m-0 mx-1">Hi! I am Pinky</h1>
                 </div>
                 <div class="menu-content">
-                    <ul class="flex m-0 p-0">
-                        <li><a href="index.html" class="p-1 mx-1">Work</a></li>
-                        <li><a href="#about" class="p-1 mx-1">About</a></li>
-                        <li><a href="#contact" class="p-1 mx-1">Contact</a></li>
-                        <li><a href="images/Pinki UX Designer.pdf" target="_blank" class="btn">✨ Download Resume</a></li>
+                    <ul class="flex m-0 p-0 align-items-center">
+                        <li><a href="index.html" class="p-1 mx-1 size14">Work</a></li>
+                        <li><a href="#about" class="p-1 mx-1 size14">About</a></li>
+                        <li><a href="#contact" class="p-1 mx-1 size14">Contact</a></li>
+                        <li class="relative">
+                            <button onclick="window.open('images/Pinki UX Designer.pdf', '_blank')" class="btn1">
+                            <svg width="140px" height="40px" viewBox="0 0 140 40" class="border">
+                                <polyline points="139,1 139,39 1,39 1,1 139,1" class="bg-line" />
+                                <polyline points="139,1 139,39 1,39 1,1 139,1" class="hl-line" />
+                            </svg>
+                            <span class="size14">Download CV</span>
+                            </button>
+                        </li>
+                        <!-- <li><a href="images/Pinki UX Designer.pdf" target="_blank" class="btn">✨ Download Resume</a></li> -->
                     </ul>
                 </div>
             </nav>
             <!-- Navigation End -->
 
             <!-- Banner Start -->
-            <div class="mt-5 relative">
+            <div class="mt-2 relative">
                 <video width="100%" class="width-100 border-radius-16 header-img" autoplay muted>
                     <source src="images/video.mp4" type="video/mp4">
                 </video>
@@ -51,9 +62,9 @@
                 <div class="tabs">
                     <ul class="flex">
                         <li><a href="javascript:void(0)" id="tab1" class="p-2 tab-link active">UX Design</a></li>
-                        <li><a href="javascript:void(0)" id="tab2" class="p-2 tab-link">Front-End</a></li>
-                        <li><a href="javascript:void(0)" id="tab3" class="p-2 tab-link">Graphic</a></li>
-                        <li><a href="javascript:void(0)" id="tab4" class="p-2 tab-link">Motion</a></li>
+                        <li><a href="javascript:void(0)" id="tab2" class="p-2 tab-link">Graphic</a></li>
+                        <li><a href="javascript:void(0)" id="tab3" class="p-2 tab-link">Motion</a></li>
+                        <li><a href="javascript:void(0)" id="tab4" class="p-2 tab-link">Coming Soon</a></li>
                     </ul>
                 </div>
                 <!-- Tabs Ends -->
@@ -84,30 +95,11 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="flex-item-50">
-                            
-                        </li>
                     </ul>
                 </div>
                 <!-- Tab Content 1 Ends -->
                 <!-- Tab Content 2 Start -->
                 <div class="work work2 mt-5">
-                    <ul class="flex flex-wrap">
-                        <li class="flex-item-50 mb-4">
-                            <div class="p-2 border-radius-16">
-                                <p class="title m-0 pb-2">Calculator</p>
-                                <a href="https://pinky-nadar.github.io/calculator/" target="_blank" class="relative block">
-                                    <img src="images/calc.png" class="width-100 border-radius-8" alt="">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="flex-item-50">
-                            
-                        </li>
-                    </ul>
-                </div>
-                <!-- Tab Content 2 Ends -->
-                <div class="work work3 mt-5">
                     <ul class="flex flex-wrap">
                         <li class="flex-item-50 mb-4">
                             <div class="p-2 border-radius-16">
@@ -122,11 +114,37 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Tab Content 2 Ends -->
+                <div class="work work3 mt-5">
+                    <ul class="flex flex-wrap">
+                        <li class="flex-item-50 mb-4">
+                            <div class="p-2 border-radius-16">
+                                <p class="title m-0 pb-2">Text Animation</p>
+                                <a href="#" class="relative block">
+                                    <img src="images/text-animation.jpg" class="width-100 border-radius-8" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex-item-50">
+                            <div class="p-2 border-radius-16">
+                                <p class="title m-0 pb-2">Dribble Animation</p>
+                                <a href="#" class="relative block">
+                                    <img src="images/dribble.png" class="width-100 border-radius-8" alt="">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <!-- Tab Content 3 Ends -->
                 <div class="work work4 mt-5">
                     <ul class="flex flex-wrap">
                         <li class="flex-item-50 mb-4">
-                            
+                            <div class="p-2 border-radius-16">
+                                <p class="title m-0 pb-2">Calculator</p>
+                                <a href="https://pinky-nadar.github.io/calculator/" target="_blank" class="relative block">
+                                    <img src="images/calc.png" class="width-100 border-radius-8" alt="">
+                                </a>
+                            </div>
                         </li>
                         <li class="flex-item-50">
                             
@@ -179,30 +197,43 @@
             <!-- Articles start -->
             <h3 class="heading">Articles</h3>
             <div class="articles mt-5">
-                <ul class="flex mx-2-n">
-                    <li class="flex-item-30 px-2 relative">
-                        <a href="https://medium.com/@umamaheshwari4795/mastering-effective-communication-with-stakeholders-bdd353a1bb9b" target="_blank" class="flex p-3 card">
-                            <img src="images/medium1.jpg" class="article-img flex-item-30 border-radius-8" alt="">
+                <ul class="flex mx-1-n width-100">
+                    <li class="px-1 width-100 relative">
+                        <a href="https://medium.com/@umamaheshwari4795/mastering-effective-communication-with-stakeholders-bdd353a1bb9b" target="_blank" class="flex pb-3 mb-3 align-items-center">
+                            <img src="images/medium1.jpg" class="article-img border-radius-8" alt="">
                             <div>
                                 <div class="flex-grow-1 article-title">Mastering Effective Communication with Stakeholders</div>
+                                <p class="color2 size14 my-1">Let’s get started by sharing some valuable insights I’ve gained from my experience over the past few months, which have greatly benefited both me and my...</p>
                                 <div class="color2 size12 mt-1">2 min read</div>
-                                <div class="flex align-items-center mt-1 pt-1 avatar"> 
-                                    <img src="images/medium-avatar.jpg" width="24px" height="24px" class="border-radius-16">
-                                    <span class="color2 px-1 size13">Pinky Nadar</span>
-                                </div>
+                            </div>
+                            <div class="arrow-icon">
+                                <img src="images/arrow-connect.svg" alt="">
                             </div>
                         </a>
                     </li>
-                    <li class="flex-item-30 px-2 relative">
-                        <a href="https://medium.com/@umamaheshwari4795/design-debt-6505cf22005f" target="_blank" class="flex p-3 card">
-                            <img src="images/medium2.jpg" class="article-img flex-item-30 border-radius-8" alt="">
+                    <li class="px-1 width-100 relative">
+                        <a href="https://medium.com/@umamaheshwari4795/design-debt-6505cf22005f" target="_blank" class="flex pb-3 mb-3 align-items-center">
+                            <img src="images/medium2.jpg" class="article-img border-radius-8" alt="">
                             <div>
                                 <div class="flex-grow-1 article-title">Design debt is like the hidden clutter in a closet</div>
+                                <p class="color2 size14 my-1">You know the feeling — your team is moving fast, pushing out updates, new features, fixes. But along the way, small trade-offs are made: a quick patch work here, a slight inconsistency...</p>
                                 <div class="color2 size12 mt-1">2 min read</div>
-                                <div class="flex align-items-center mt-1 pt-1 avatar"> 
-                                    <img src="images/medium-avatar.jpg" width="24px" height="24px" class="border-radius-16">
-                                    <span class="color2 px-1 size13">Pinky Nadar</span>
-                                </div>
+                            </div>
+                            <div class="arrow-icon">
+                                <img src="images/arrow-connect.svg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="px-1 width-100 relative">
+                        <a href="https://medium.com/@umamaheshwari4795/struggling-with-a-complex-design-system-bb8152f740e9" target="_blank" class="flex pb-3 mb-3 align-items-center">
+                            <img src="images/Design Token.png" class="article-img border-radius-8" alt="">
+                            <div>
+                                <div class="flex-grow-1 article-title">Struggling with a complex design system?</div>
+                                <p class="color2 size14 my-1">Figma’s variable tier structure — Primitive, Semantic, and Component-Specific tiers — comes to the rescue. Each type communicates the what (primitive), how (semantic), and where...</p>
+                                <div class="color2 size12 mt-1">2 min read</div>
+                            </div>
+                            <div class="arrow-icon">
+                                <img src="images/arrow-connect.svg" alt="">
                             </div>
                         </a>
                     </li>
@@ -210,7 +241,22 @@
             </div>
             <!-- Articles ends -->
 
-            <br><br><br>
+            <br><br><br><br><br><br>
+
+            <!-- Mentor -->
+            <div class="mentorship">
+                <div class="four-pointed-star relative">
+                    <img src="images/diamond.svg" alt="">
+                    <img src="images/star.svg" class="star1" alt="">
+                    <img src="images/star.svg" class="star2" alt="">
+                </div>
+                
+                <p class="color2">Empowering yound deigners towards building confidence in their design decisions by creating a space where they felt heard and supported. Encouraged them to explore their ideas while providing actionable feedback that refined their work.</p>
+                <p class="color2">Watching them grow into confident professionals has been one of the most rewarding parts of my journey.</p>
+            </div>
+            <!-- Mentor Ends -->
+
+            <br><br><br><br><br><br>
 
             <!-- Contact -->
             <h3 class="heading" id="contact">Let's Connect</h3>
@@ -255,7 +301,7 @@
             
          </div>
          <footer class="footer mb-2">
-            <p class="text-center color2">Designed & Developed by Me ❤️</p>
+            <p class="text-center color2 size12">Designed & Developed by Me ❤️</p>
          </footer>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

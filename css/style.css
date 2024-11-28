@@ -11,6 +11,7 @@
 .color2{
     color: var(--text-2);
 }
+
 img{
     max-width: 100%;
 }
@@ -66,6 +67,9 @@ h3{
 }
 .size13{
     font-size: 13px;
+}
+.size14{
+    font-size: 14px;
 }
 .m-0{
     margin: 0;
@@ -172,6 +176,9 @@ h3{
 .mx-2{
     margin: 0 1rem 0 1rem;
 }
+.mx-1-n{
+    margin: 0 -0.5rem 0 -0.5rem;
+}
 .mx-2-n{
     margin: 0 -1rem 0 -1rem;
 }
@@ -224,7 +231,8 @@ h3{
     flex-grow: 1;
 }
 .flex-item-50{
-    flex: 45%;
+    flex: 50%;
+    max-width: 50%;
 }
 .flex-item-30{
     flex: 30%;
@@ -280,9 +288,22 @@ h3{
     z-index: 1;
 }
 .nav-menu{
-    border-bottom: 1px solid var(--surface-color);
+    /* border-bottom: 1px solid var(--surface-color); */
     justify-content: space-between;
     align-items: center;
+}
+.fixedHeader{
+    position: fixed;
+    width: calc(64% - 220px);
+    margin: 0 auto;
+    z-index: 9;
+    background: rgba(0,0,0,0.35);
+    padding: 8px 24px 8px 12px;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--surface-color);
+    border-radius: 64px;
 }
 .logo{
     font-size: 20px;
@@ -419,7 +440,7 @@ h3{
 .card{
     background-color: var(--surface-color);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 1rem;
     border: 1px solid var(--text-3);
 }
 .banner-img{
@@ -452,26 +473,116 @@ h3{
     color: var(--text-2);
 }
 
-.articles{
-
+.articles ul{
+    flex-wrap: wrap;
+}
+.articles a{
+    border-bottom: 1px dashed var(--text-3);
+}
+.articles a:hover{
+    border-bottom: 1px dashed yellow;
+}
+.articles a:hover .arrow-icon img{
+    transform: rotate(-45deg);
 }
 .medium{
     flex-direction: column;
 }
 .article-title{
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 700;
 }
 .article-img{
-    height: 110px;
-    width: 100%;
-    max-width: 30%;
+    height: 120px;
+    width: 120px;
     object-fit: cover;
     margin-right: 16px;
+    object-position: left;
 }
-
-.avatar{
-    border-top: 1px solid var(--text-3);
+.arrow-icon img{
+    width: 120px;
+    transition: 0.3s ease-in-out;
 }
 .footer{
     border-top: 1px solid var(--surface-color);
+}
+
+
+
+.btn1 {
+width: 140px;
+height: 40px;
+cursor: pointer;
+background: transparent;
+border: 1px dashed var(--text-3);
+outline: none;
+transition: 1s ease-in-out;
+}
+
+svg {
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+fill: none;
+stroke: yellow;
+stroke-dasharray: 150 480;
+stroke-dashoffset: 150;
+transition: 1s ease-in-out;
+}
+
+.btn1:hover {
+transition: 1s ease-in-out;
+background: var(--surface-color);
+}
+
+.btn1:hover svg {
+stroke-dashoffset: -480;
+}
+
+.btn1 span {
+color: white;
+font-weight: 100;
+}
+
+.mentorship{
+    font-size: 28px;
+}
+.star1{
+    position: absolute;
+    left: 96px;
+    scale: 0;
+    transform: rotate(90deg);
+    animation: star1 forwards 2s infinite;
+}
+@keyframes star1{
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 1;
+        transform: rotate(360deg);
+    }
+    100%{
+        scale: 0;
+        transform: rotate(360deg);
+    }
+}
+.star2{
+    position: absolute;
+    left: 74px;
+    top: -10px;
+    animation: star2 forwards 3s infinite;
+}
+@keyframes star2{
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 0.7;
+    }
+    100%{
+        scale: 0;
+    }
 }

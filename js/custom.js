@@ -12,3 +12,15 @@ $('.tabs li a').click(function(){
     });
 });
 
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 200) {
+        //clearHeader, not clearheader - caps H
+        $(".nav-menu").addClass("fixedHeader");
+    }
+    else{
+        $(".nav-menu").removeClass("fixedHeader");
+    }
+}); //missing );
