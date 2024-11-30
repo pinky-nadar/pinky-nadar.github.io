@@ -71,6 +71,12 @@ h3{
 .size14{
     font-size: 14px;
 }
+.order2{
+    order: 2;
+}
+.font-bold{
+    font-weight: 700;
+}
 .m-0{
     margin: 0;
 }
@@ -160,6 +166,12 @@ h3{
 }
 .mb-4{
     margin-bottom: 2rem;
+}
+.pl-2{
+    padding-left: 2rem;
+}
+.pr-2{
+    padding-right: 2rem;
 }
 .mx-1{
     margin: 0 0.5rem 0 0.5rem;
@@ -277,6 +289,15 @@ h3{
 .text-center{
     text-align: center;
 }
+.big{
+    font-size: 64px;
+}
+.vertical-align-top{
+    vertical-align: top;
+}
+.vertical-align-middle{
+    vertical-align: middle;
+}
 /*  */
 /*  */
 /*  */
@@ -304,6 +325,7 @@ h3{
     backdrop-filter: blur(10px);
     border: 1px solid var(--surface-color);
     border-radius: 64px;
+    top: 16px;
 }
 .logo{
     font-size: 20px;
@@ -585,4 +607,28 @@ font-weight: 100;
     100%{
         scale: 0;
     }
+}
+
+.list li{
+    margin-bottom: 4px;
+}
+
+.list li:before{
+    content: '';
+    background: url(../images/tick.svg);
+    background-size: 12px 12px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    vertical-align: baseline;
+}
+
+.result-icon{
+    width: 64px;
+    height: 64px;
+}
+.result-card{
+    border: 1px dashed var(--text-3);
+    background-color: var(--surface-color);
 }

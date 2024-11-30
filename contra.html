@@ -8,34 +8,45 @@
     <body class="relative m-0">
         <div class="container">
             <!-- Navigation Start -->
-            <nav class="nav-menu flex width-100 relative pb-3 mt-3">
-                <div class="menu-content">
-                    <h1 class="logo m-0">Hi! I am Pinky</h1>
+            <nav class="nav-menu flex width-100 relative pb-2 mt-2">
+                <div class="menu-content flex align-items-center">
+                    <img src="images/medium-avatar.jpg" width="32px" height="32px" class="border-radius-16">
+                    <h1 class="logo m-0 mx-1">Hi! I am Pinky</h1>
                 </div>
                 <div class="menu-content">
-                    <ul class="flex m-0 p-0">
-                        <li><a href="index.html" class="p-1 mx-1">Work</a></li>
-                        <li><a href="about.html" class="p-1 mx-1">About</a></li>
-                        <li><a href="contact.html" class="p-1 mx-1">Contact</a></li>
+                    <ul class="flex m-0 p-0 align-items-center">
+                        <li><a href="index.html" class="p-1 mx-1 size14">Work</a></li>
+                        <li><a href="#about" class="p-1 mx-1 size14">About</a></li>
+                        <li><a href="#contact" class="p-1 mx-1 size14">Contact</a></li>
+                        <li class="relative">
+                            <button onclick="window.open('images/Pinki UX Designer.pdf', '_blank')" class="btn1">
+                            <svg width="140px" height="40px" viewBox="0 0 140 40" class="border">
+                                <polyline points="139,1 139,39 1,39 1,1 139,1" class="bg-line" />
+                                <polyline points="139,1 139,39 1,39 1,1 139,1" class="hl-line" />
+                            </svg>
+                            <span class="size14">Resume</span>
+                            </button>
+                        </li>
+                        <!-- <li><a href="images/Pinki UX Designer.pdf" target="_blank" class="btn">✨ Download Resume</a></li> -->
                     </ul>
                 </div>
             </nav>
             <!-- Navigation End -->
-            <div class="card-look mt-5">
+            <div class="card-look">
                 <!-- Contra App -->
                 <img src="images/contra/banner.jpg" class="border-radius-8 banner-img" alt="">
                 <h2 class="mt-0">Contract Management App</h2>
-                <p class="color2">Our app simplifies contract management by creating a centralized repository for contracts and using OCR to extract obligations and clauses.</p>
+                <p class="color2 mt-0">Our app simplifies contract management by creating a centralized repository for contracts and using OCR to extract obligations and clauses.</p>
                 <br>
                 <h3>Problem</h3>
-                <p class="color2">Organizations struggle with managing contracts efficiently due to reliance on paper-based methods. This manual process often leads to inefficiencies, such as difficulty in locating specific contracts, time-consuming search processes, and challenges in tracking contract status and obligations.</p>
+                <p class="color2 mt-1">Organizations struggle with managing contracts efficiently due to reliance on paper-based methods. This manual process often leads to inefficiencies, such as difficulty in locating specific contracts, time-consuming search processes, and challenges in tracking contract status and obligations.</p>
                 <p class="color2">The transition to a digital contract management solution is necessary to eliminate these inefficiencies and improve overall contract management processes.</p>
                 
                 <h3>Goal</h3>
-                <p class="color2">Create a user-friendly digital contract management system that streamlines storage, improves search functionality, and provides clear visibility into contract status and obligations, ultimately enhancing productivity and efficiency.</p>
+                <p class="color2 mt-1">Create a user-friendly digital contract management system that streamlines storage, improves search functionality, and provides clear visibility into contract status and obligations, ultimately enhancing productivity and efficiency.</p>
                 <br>
                 <h3>Core Features</h3>
-                <ul class="color2">
+                <ul class="color2 list relative mt-1">
                     <li>Contract Filtering: Efficient search with keywords and filters.</li>
                     <li>OCR Processing: Extract text from documents for easier search.</li>
                     <li>Version Control: Manage and track contract revisions.</li>
@@ -45,19 +56,31 @@
                 </ul>
                 <br>
                 <h3>User Persona</h3>
+                <img src="images/contra/user1.png" class="mt-2" alt="">
+                <img src="images/contra/user2.png" class="mt-3" alt="">
                 <br>
-                <h3>Key Takeaways</h3>
-                <p class="color2">User needs were a centralized solution to streamline contract management, reduce manual processes, and ensure compliance. Key needs include easy search, efficient tracking, and collaboration for faster contract review and revision management.</p>
+                <br>
+                <br>
+                <div class="four-pointed-star relative mt-5">
+                    <img src="images/diamond.svg" alt="">
+                    <img src="images/star.svg" class="star1" alt="">
+                    <img src="images/star.svg" class="star2" alt="">
+                    
+                    <h3>Key Takeaways</h3>
+                </div>
+                
+                <p class="color2 mt-1">User needs were a centralized solution to streamline contract management, reduce manual processes, and ensure compliance. Key needs include easy search, efficient tracking, and collaboration for faster contract review and revision management.</p>
                 <br>
                 <h3>User Flow</h3>
-                <p class="color2">Developed a seamless user flow for the contract management app, focusing on simplifying core tasks like contract upload, search, tracking, and digital signatures.</p>
+                <p class="color2 mt-1">Developed a seamless user flow for the contract management app, focusing on simplifying core tasks like contract upload, search, tracking, and digital signatures.</p>
                 <p class="color2">By incorporating features such as OCR processing, a clear contract status system, and a centralized dashboard, the designer ensured users could easily navigate and manage contracts.</p>
                 <p class="color2">The flow was designed to improve efficiency, minimize time spent on tasks, and provide a user-friendly experience.</p>
-                <h3>High Fidelity designs in Figma</h3>
-                <img src="images/contra/hf-1.png" class="width-100" alt="">
-                <br><br>
+                <img src="images/contra/Workflow.png" class="mt-3" alt="">
+                <br><br><br><br><br>
+                <h2 class="big text-center my-5">Designs</h2>
+                <br>
                 <div class="flex mt-5">
-                    <div class="flex-item-50">
+                    <div class="flex-item-50 pr-2">
                         <h3>Centralized View</h3>
                         <p class="color2">The Dashboard offers a centralized view of key contract obligations, including statuses, deadlines, and pending actions.</p>
                         <p class="color2">It provides real-time updates and quick access to tasks like signing or reviewing, helping users manage contracts efficiently and stay organized.</p>
@@ -68,7 +91,7 @@
                 </div>
                 <br><br>
                 <div class="flex mt-5">
-                    <div class="flex-item-50">
+                    <div class="flex-item-50 order2 pl-2">
                         <h3>Signatures & Collaboration</h3>
                         <p class="color2">The Digital Signatures feature enables users to sign contracts electronically within the platform, streamlining the approval process. </p>
                         <p class="color2">It allows for easy collaboration by enabling multiple stakeholders to review, approve, and sign documents in a secure, efficient manner, eliminating the need for physical signatures or external tools.</p>
@@ -78,12 +101,83 @@
                         <img src="images/contra/SC.png" alt="">
                     </div>
                 </div>
+                <br><br><br><br><br>
+                <h2 class="big text-center my-5">Result</h2>
+                <ul class="flex mx-2-n">
+                    <li class="flex-item-50 px-2">
+                        <div class="result-card p-2 border-radius-8">
+                            <img src="images/contra/usable.svg" class="result-icon" alt="">
+                            <div class="flex align-items-center">
+                                <p class="result-title color2">Positive user feedback led to an improvement in usability by</p>
+                                <span class="big result-per font-bold">41%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex-item-50 px-2">
+                        <div class="result-card p-2 border-radius-8">
+                            <img src="images/contra/code.svg" class="result-icon" alt="">
+                            <div class="flex align-items-center">
+                                <p class="result-title color2">With scalable design system reduce developement efforts by</p>
+                                <span class="big result-per font-bold">62%</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <!-- Contra App -->
-        </div>
-        
-        <div class="container">
+
+            <br><br><br>
+            <br><br><br>
+
+            <!-- Contact -->
+            <h3 class="heading" id="contact">Let's Connect</h3>
+            <div class="contact mt-5">
+                <ul class="flex mx-2-n">
+                    <li class="flex-item-30 px-2 relative">
+                        <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-3 behance">
+                            <img src="images/behance.svg" class="icon" alt="">
+                            <span class="flex-grow-1 mt-3">Behance</span>
+                        </a>
+                    </li>
+                    <li class="flex-item-30 px-2">
+                        <a href="mailto:umamaheshwari4795@gmail.com" class="flex align-items-center p-3 mail">
+                            <img src="images/gmail.svg" class="icon" alt="">
+                            <span class="flex-grow-1 mt-3">Mail</span>
+                        </a>
+                    </li>
+                    <li class="flex-item-30 px-2">
+                        <a href="https://www.linkedin.com/in/pinky-nadar-6613b4108/" target="_blank" class="flex align-items-center p-3 linkedin">
+                            <img src="images/linkedin.svg" class="icon" alt="">
+                            <span class="flex-grow-1 mt-3">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="flex-item-30 px-2">
+                        <a href="https://dribbble.com/pinky_nadar" target="_blank" class="flex align-items-center p-3 dribble">
+                            <img src="images/dribble.svg" class="icon" alt="">
+                            <span class="flex-grow-1 mt-3">Dribble</span>
+                        </a>
+                    </li>
+                    <li class="flex-item-30 px-2">
+                        <a href="https://medium.com/@umamaheshwari4795" target="_blank" class="flex align-items-center p-3 medium">
+                            <img src="images/medium.svg" class="icon" alt="">
+                            <span class="flex-grow-1 mt-3">Medium</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            
+            <br><br><br>
+            <br><br><br>
             
         </div>
+        <footer class="footer mb-2">
+        <p class="text-center color2 size12">Designed & Developed by Me ❤️</p>
+        </footer>
+        
+        
+        
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
 </html>
