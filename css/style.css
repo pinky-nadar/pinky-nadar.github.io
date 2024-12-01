@@ -248,6 +248,9 @@ h3{
 .flex-wrap{
     flex-wrap: wrap;
 }
+.direction-column{
+    flex-direction: column;
+}
 .flex-grow-1{
     flex-grow: 1;
 }
@@ -372,7 +375,7 @@ h3{
     }
 }
 .work div{
-    background-color: var(--surface-color);
+    border: 1px dashed var(--text-3);
     display: block;
 }
 .work .title{
