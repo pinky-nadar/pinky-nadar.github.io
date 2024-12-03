@@ -34,10 +34,10 @@
 
             <!-- Banner Start -->
             <div class="mt-2 relative">
-                <video width="100%" class="width-100 border-radius-16 header-img" autoplay muted>
-                    <source src="images/video.mp4" type="video/mp4">
+                <video width="100%" class="width-100 border-radius-8 header-img" autoplay muted loop>
+                    <source src="images/video3.mp4" type="video/mp4">
                 </video>
-                <!-- <img src="images/header.jpg" alt="" class="width-100 border-radius-16 header-img"> -->
+                <div class="layer border-radius-8"></div>
                 <h2 class="absolute-center text-center banner-text">Designing thoughtful experiences that makes a difference</h2>
             </div>
             <!-- Banner End -->
@@ -101,13 +101,18 @@
                         <li class="flex-item-50 mb-4">
                             <div class="p-2 border-radius-16">
                                 <p class="title m-0 pb-2">Instacart Illustration</p>
-                                <a href="" class="relative block">
+                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(1)">
                                     <img src="images/instacart.png" class="width-100 border-radius-8" alt="">
                                 </a>
                             </div>
                         </li>
                         <li class="flex-item-50">
-                            
+                            <div class="p-2 border-radius-16">
+                                <p class="title m-0 pb-2">Stationery Icons</p>
+                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(2)">
+                                    <img src="images/icon-set.jpg" class="width-100 border-radius-8" alt="">
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -117,7 +122,7 @@
                         <li class="flex-item-50 mb-4">
                             <div class="p-2 border-radius-16">
                                 <p class="title m-0 pb-2">Text Animation</p>
-                                <a href="#" class="relative block">
+                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(3)">
                                     <img src="images/text-animation.jpg" class="width-100 border-radius-8" alt="">
                                 </a>
                             </div>
@@ -125,7 +130,7 @@
                         <li class="flex-item-50">
                             <div class="p-2 border-radius-16">
                                 <p class="title m-0 pb-2">Dribble Animation</p>
-                                <a href="#" class="relative block">
+                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(4)">
                                     <img src="images/dribble.png" class="width-100 border-radius-8" alt="">
                                 </a>
                             </div>
@@ -191,7 +196,7 @@
             <br><br><br>
             <!-- Articles start -->
             <h3 class="heading">Writings</h3>
-            <div class="articles mt-5">
+            <div class="articles mt-2 mt-md-5">
                 <ul class="flex mx-1-n width-100">
                     <li class="px-1 width-100 relative">
                         <a href="https://medium.com/@umamaheshwari4795/mastering-effective-communication-with-stakeholders-bdd353a1bb9b" target="_blank" class="flex pb-3 mb-3 align-items-center direction-sm-column">
@@ -201,7 +206,7 @@
                                 <p class="color2 size14 my-1">Let’s get started by sharing some valuable insights I’ve gained from my experience over the past few months, which have greatly benefited both me and my...</p>
                                 <div class="color2 size12 mt-1">2 min read</div>
                             </div>
-                            <div class="arrow-icon">
+                            <div class="arrow-icon mobile-none">
                                 <img src="images/arrow-connect.svg" alt="">
                             </div>
                         </a>
@@ -214,7 +219,7 @@
                                 <p class="color2 size14 my-1">You know the feeling — your team is moving fast, pushing out updates, new features, fixes. But along the way, small trade-offs are made: a quick patch work here, a slight inconsistency...</p>
                                 <div class="color2 size12 mt-1">2 min read</div>
                             </div>
-                            <div class="arrow-icon">
+                            <div class="arrow-icon mobile-none">
                                 <img src="images/arrow-connect.svg" alt="">
                             </div>
                         </a>
@@ -227,7 +232,7 @@
                                 <p class="color2 size14 my-1">Figma’s variable tier structure — Primitive, Semantic, and Component-Specific tiers — comes to the rescue. Each type communicates the what (primitive), how (semantic), and where...</p>
                                 <div class="color2 size12 mt-1">2 min read</div>
                             </div>
-                            <div class="arrow-icon">
+                            <div class="arrow-icon mobile-none">
                                 <img src="images/arrow-connect.svg" alt="">
                             </div>
                         </a>
@@ -259,31 +264,31 @@
             <div class="contact mt-2 mt-md-5">
                 <ul class="flex mx-2-n direction-sm-column">
                     <li class="flex-item-30 px-2 relative mb-sm-2">
-                        <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-3 behance">
+                        <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-2 p-md-3 behance">
                             <img src="images/behance.svg" class="icon" alt="">
                             <span class="flex-grow-1 mt-md-3 mx-md-1">Behance</span>
                         </a>
                     </li>
                     <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="mailto:umamaheshwari4795@gmail.com" class="flex align-items-center p-3 mail">
+                        <a href="mailto:umamaheshwari4795@gmail.com" class="flex align-items-center p-2 p-md-3 mail">
                             <img src="images/gmail.svg" class="icon" alt="">
                             <span class="flex-grow-1 mt-md-3 mx-md-1">Mail</span>
                         </a>
                     </li>
                     <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="https://www.linkedin.com/in/pinky-nadar-6613b4108/" target="_blank" class="flex align-items-center p-3 linkedin">
+                        <a href="https://www.linkedin.com/in/pinky-nadar-6613b4108/" target="_blank" class="flex align-items-center p-2 p-md-3 linkedin">
                             <img src="images/linkedin.svg" class="icon" alt="">
                             <span class="flex-grow-1 mt-md-3 mx-md-1">LinkedIn</span>
                         </a>
                     </li>
                     <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="https://dribbble.com/pinky_nadar" target="_blank" class="flex align-items-center p-3 dribble">
+                        <a href="https://dribbble.com/pinky_nadar" target="_blank" class="flex align-items-center p-2 p-md-3 dribble">
                             <img src="images/dribble.svg" class="icon" alt="">
                             <span class="flex-grow-1 mt-md-3 mx-md-1">Dribble</span>
                         </a>
                     </li>
                     <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="https://medium.com/@umamaheshwari4795" target="_blank" class="flex align-items-center p-3 medium">
+                        <a href="https://medium.com/@umamaheshwari4795" target="_blank" class="flex align-items-center p-2 p-md-3 medium">
                             <img src="images/medium.svg" class="icon" alt="">
                             <span class="flex-grow-1 mt-md-3 mx-md-1">Medium</span>
                         </a>
@@ -299,8 +304,68 @@
          <footer class="footer mb-2">
             <p class="text-center color2 size12">Designed & Developed by Me ❤️</p>
          </footer>
+         <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides text-center">
+                <img src="images/instacart.png">
+              </div>
+          
+              <div class="mySlides text-center">
+                <img src="images/icon-set.jpg">
+              </div>
+          
+              <div class="mySlides text-center">
+                <img src="images/text-animation.gif" class="gif-video">
+              </div>
+              
+              <div class="mySlides text-center">
+                <img src="images/dribble.gif" class="gif-video">
+              </div>
+              
+            </div>
+        </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+        //   var dots = document.getElementsByClassName("demo");
+        //   var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+        //   for (i = 0; i < dots.length; i++) {
+        //       dots[i].className = dots[i].className.replace(" active", "");
+        //   }
+          slides[slideIndex-1].style.display = "block";
+        //   dots[slideIndex-1].className += " active";
+        //   captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
 </html>
 
