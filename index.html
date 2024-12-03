@@ -2,6 +2,7 @@
     <head>
         <title>Pinky Nadar</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -14,24 +15,18 @@
                 <div class="menu-content flex align-items-center">
                     <a href="index.html" class="flex">
                         <img src="images/medium-avatar.jpg" width="32px" height="32px" class="border-radius-16">
-                        <h1 class="logo m-0 mx-1">Hi! I am Pinky</h1>
+                        <h1 class="logo m-0 mx-1 mobile-none">Hi! I am Pinky</h1>
                     </a>
                 </div>
                 <div class="menu-content">
-                    <ul class="flex m-0 p-0 align-items-center">
+                    <a href="javascript:void(0)" class="desktop-none">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
+                    </a>
+                    <ul class="flex m-0 p-0 align-items-center mobile-none">
                         <li><a href="index.html" class="p-1 mx-1 size14">Work</a></li>
                         <li><a href="#about" class="p-1 mx-1 size14">About</a></li>
                         <li><a href="#contact" class="p-1 mx-1 size14">Contact</a></li>
-                        <li class="relative">
-                            <button onclick="window.open('images/Pinki UX Designer.pdf', '_blank')" class="btn1">
-                            <svg width="140px" height="40px" viewBox="0 0 140 40" class="border">
-                                <polyline points="139,1 139,39 1,39 1,1 139,1" class="bg-line" />
-                                <polyline points="139,1 139,39 1,39 1,1 139,1" class="hl-line" />
-                            </svg>
-                            <span class="size14">Resume</span>
-                            </button>
-                        </li>
-                        <!-- <li><a href="images/Pinki UX Designer.pdf" target="_blank" class="btn">✨ Download Resume</a></li> -->
+                        <li><a href="images/Pinki UX Designer.pdf" target="_blank" class="btn size14">Resume</a></li>
                     </ul>
                 </div>
             </nav>
@@ -73,7 +68,7 @@
                 <!-- Tab Content 1 Start -->
                 <div class="work work1 mt-5 active">
                     <ul class="flex direction-column">
-                        <li class="mb-4">
+                        <li class="mb-sm-2 mb-md-4">
                             <div class="p-1 border-radius-16">
                                 <!-- <p class="title m-0 pb-2">Contra App</p> -->
                                 <a href="contra.html" class="relative block">
@@ -81,7 +76,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-sm-2 mb-md-4">
                             <div class="p-1 border-radius-16">
                                 <!-- <p class="title m-0 pb-2">Wimo</p> -->
                                 <a href="wimo.html" class="relative block">
@@ -89,7 +84,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-sm-2 mb-md-4">
                             <div class="p-1 border-radius-16">
                                 <!-- <p class="title m-0 pb-2">Design System</p> -->
                                 <a href="atomic.html" class="relative block">
@@ -157,12 +152,11 @@
             </div>
             <!-- Tabs Ends -->
 
-            <br><br><br>
 
             <!-- About me -->
-            <h2 class="heading" id="about">Behind the Design</h2>
-            <div class="card">
-                <div class="about flex mx-2-n">
+            <h2 class="heading pt-5" id="about"><br>Behind the Design</h2>
+            <div class="about">
+                <div class="about flex mx-2-n direction-sm-column">
                     <div class="image flex-item-30 px-2">
                         <div class="relative">
                             <img src="images/image.png" class="border-radius-8" alt="">
@@ -189,7 +183,6 @@
                             <li>- UserZoom, Pendo, Loom</li>
                             <li>- Jira, Notion, Aha!, Trello, Asana</li>
                             <li>- AI Tools: ChatGPT, Perplexity, Copilot etc.</li>
-                            <li>(Too many to list)</li>
                         </ul>
                     </div>
                 </div>
@@ -201,8 +194,8 @@
             <div class="articles mt-5">
                 <ul class="flex mx-1-n width-100">
                     <li class="px-1 width-100 relative">
-                        <a href="https://medium.com/@umamaheshwari4795/mastering-effective-communication-with-stakeholders-bdd353a1bb9b" target="_blank" class="flex pb-3 mb-3 align-items-center">
-                            <img src="images/medium1.jpg" class="article-img border-radius-8" alt="">
+                        <a href="https://medium.com/@umamaheshwari4795/mastering-effective-communication-with-stakeholders-bdd353a1bb9b" target="_blank" class="flex pb-3 mb-3 align-items-center direction-sm-column">
+                            <img src="images/medium1.jpg" class="article-img border-radius-8 mobile-none" alt="">
                             <div>
                                 <div class="flex-grow-1 article-title">Mastering Effective Communication with Stakeholders</div>
                                 <p class="color2 size14 my-1">Let’s get started by sharing some valuable insights I’ve gained from my experience over the past few months, which have greatly benefited both me and my...</p>
@@ -214,8 +207,8 @@
                         </a>
                     </li>
                     <li class="px-1 width-100 relative">
-                        <a href="https://medium.com/@umamaheshwari4795/design-debt-6505cf22005f" target="_blank" class="flex pb-3 mb-3 align-items-center">
-                            <img src="images/medium2.jpg" class="article-img border-radius-8" alt="">
+                        <a href="https://medium.com/@umamaheshwari4795/design-debt-6505cf22005f" target="_blank" class="flex pb-3 mb-3 align-items-center direction-sm-column">
+                            <img src="images/medium2.jpg" class="article-img border-radius-8 mobile-none" alt="">
                             <div>
                                 <div class="flex-grow-1 article-title">Design debt is like the hidden clutter in a closet</div>
                                 <p class="color2 size14 my-1">You know the feeling — your team is moving fast, pushing out updates, new features, fixes. But along the way, small trade-offs are made: a quick patch work here, a slight inconsistency...</p>
@@ -228,7 +221,7 @@
                     </li>
                     <li class="px-1 width-100 relative">
                         <a href="https://medium.com/@umamaheshwari4795/struggling-with-a-complex-design-system-bb8152f740e9" target="_blank" class="flex pb-3 mb-3 align-items-center">
-                            <img src="images/Design Token.png" class="article-img border-radius-8" alt="">
+                            <img src="images/Design Token.png" class="article-img border-radius-8 mobile-none" alt="">
                             <div>
                                 <div class="flex-grow-1 article-title">Struggling with a complex design system?</div>
                                 <p class="color2 size14 my-1">Figma’s variable tier structure — Primitive, Semantic, and Component-Specific tiers — comes to the rescue. Each type communicates the what (primitive), how (semantic), and where...</p>
@@ -263,36 +256,36 @@
 
             <!-- Contact -->
             <h3 class="heading" id="contact">Let's Connect</h3>
-            <div class="contact mt-5">
-                <ul class="flex mx-2-n">
-                    <li class="flex-item-30 px-2 relative">
+            <div class="contact mt-2 mt-md-5">
+                <ul class="flex mx-2-n direction-sm-column">
+                    <li class="flex-item-30 px-2 relative mb-sm-2">
                         <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-3 behance">
                             <img src="images/behance.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-3">Behance</span>
+                            <span class="flex-grow-1 mt-md-3 mx-md-1">Behance</span>
                         </a>
                     </li>
-                    <li class="flex-item-30 px-2">
+                    <li class="flex-item-30 px-2 mb-sm-2">
                         <a href="mailto:umamaheshwari4795@gmail.com" class="flex align-items-center p-3 mail">
                             <img src="images/gmail.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-3">Mail</span>
+                            <span class="flex-grow-1 mt-md-3 mx-md-1">Mail</span>
                         </a>
                     </li>
-                    <li class="flex-item-30 px-2">
+                    <li class="flex-item-30 px-2 mb-sm-2">
                         <a href="https://www.linkedin.com/in/pinky-nadar-6613b4108/" target="_blank" class="flex align-items-center p-3 linkedin">
                             <img src="images/linkedin.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-3">LinkedIn</span>
+                            <span class="flex-grow-1 mt-md-3 mx-md-1">LinkedIn</span>
                         </a>
                     </li>
-                    <li class="flex-item-30 px-2">
+                    <li class="flex-item-30 px-2 mb-sm-2">
                         <a href="https://dribbble.com/pinky_nadar" target="_blank" class="flex align-items-center p-3 dribble">
                             <img src="images/dribble.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-3">Dribble</span>
+                            <span class="flex-grow-1 mt-md-3 mx-md-1">Dribble</span>
                         </a>
                     </li>
-                    <li class="flex-item-30 px-2">
+                    <li class="flex-item-30 px-2 mb-sm-2">
                         <a href="https://medium.com/@umamaheshwari4795" target="_blank" class="flex align-items-center p-3 medium">
                             <img src="images/medium.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-3">Medium</span>
+                            <span class="flex-grow-1 mt-md-3 mx-md-1">Medium</span>
                         </a>
                     </li>
                 </ul>
