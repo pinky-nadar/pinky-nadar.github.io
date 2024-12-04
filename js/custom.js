@@ -11,8 +11,17 @@ $('.tabs li a').click(function(event){
             $(this).addClass('active');
         }
     });
-});
 
+    
+});
+$('.mobile-menu').click(function(){
+    $('.menu').addClass('mobile-list');
+    $('.mobile-list').toggle();
+    $('.menu-content').toggleClass('icon-class');
+});
+$('.close-menu').click(function(){
+    $('.mobile-list').toggle();
+});
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
