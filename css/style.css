@@ -80,6 +80,14 @@ h3{
         max-width: 100%;
     }
 }
+.flex-item-25{
+    flex: 25%;
+    max-width: 25%;
+    @media screen and (max-width: 767px) {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
 .flex-item-30{
     flex: 30%;
@@ -806,4 +814,9 @@ cursor: pointer;
         left: 50%;
         position: relative;
     }
+}
+.certi p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
