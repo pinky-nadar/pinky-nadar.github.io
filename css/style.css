@@ -478,9 +478,13 @@ font-weight: bold;
     width: 70%;
     top: 20%;
     @media screen and (max-width: 767px) {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 26px;
         width: 90%;
+        transform: translate(0,0);
+        left: 24px;
+        text-align: left;
+        top: 15%;
     }
 }
 .banner-text{
@@ -491,8 +495,12 @@ font-weight: bold;
     width: 70%;
     @media screen and (max-width: 767px) {
         font-size: 20px;
-        line-height: 26px;
+        line-height: 28px;
         width: 90%;
+        top: 65%;
+        transform: translate(0,-65%);
+        left: 24px;
+        text-align: left;
     }
 }
 .moving-text{
