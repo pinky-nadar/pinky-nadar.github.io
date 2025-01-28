@@ -3,35 +3,58 @@
         <title>Pinki Nadar</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Pinki Nadar - UX Designer" />
+        <meta property="og:image" content="images/wimo.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
     </head>
-    <body class="relative m-0">
-        <div class="container">
+    <body class="relative m-0 inner-page-body">
+        
             <!-- Navigation Start -->
-            <nav class="nav-menu flex width-100 relative pb-2 mt-2">
+            <nav class="nav-menu width-100 relative pb-2 mt-2">
                 <div class="menu-content flex align-items-center">
-                    <a href="index.html" class="flex">
-                        <img src="images/medium-avatar.jpg" width="32px" height="32px" class="border-radius-16">
-                        <!-- <h1 class="logo m-0 mx-1">Hi! I am Pinki</h1> -->
+                    <a href="index.html" class="desktop-none mobile-menu">
+                        <img src="images/logo.svg" alt="">                        
                     </a>
-                </div>
-                <div class="menu-content">
-                    <a href="javascript:void(0)" class="desktop-none mobile-menu">
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-x close-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                    </a>
-                    <ul class="flex m-0 p-0 align-items-center mobile-none menu">
-                        <li><a href="index.html" class="p-1 mx-1 size14">Work</a></li>
-                        <li><a href="index.html#about" class="p-1 mx-1 size14">About</a></li>
+                    <ul class="flex links align-items-center mobile-none menu">
+                        <li><a href="index.html#ux" class="p-1 mx-1 size14">Work</a></li>
+                        <li><a href="about.html" class="p-1 mx-1 size14">About</a></li>
+                        <li><a href="writing.html" class="p-1 mx-1 size14">Writings</a></li>
                         <li><a href="#contact" class="p-1 mx-1 size14">Contact</a></li>
                     </ul>
                 </div>
             </nav>
             <!-- Navigation End -->
+
+            <!-- Banner Start -->
+            <div class="mt-2 relative background flex justify-content-center direction-column page-banner">
+                    <h2 class="text-center banner-text">Insta<span>Cart</span></h2>
+
+                    
+            </div>
+            <!-- Banner End -->
+        <div class="container">
             <div class="card-look">
+                <div class="flex space-between team-overview">
+                    <div>
+                        <h4>Team</h4>
+                        <ul>
+                            <li>Designer (Me)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Project Type</h4>
+                        <p>Practice</p>
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+                
+               
                 <!-- Instacart App -->
                 <img src="images/instacart/banner.svg" class="border-radius-8 banner-img" alt="">
                 <h3 class="heading">What are empty states?</h3>
@@ -41,8 +64,8 @@
                     <li>A returning user has completed all tasks, leaving the screen blank.</li>
                 </ul>
                 <br>
-                <h3 class="heading">Key UX Issues</h3>
-                <img src="images/instacart/issues.png" class="mt-3" alt="">
+                <h3 class="heading">Key UX Issues</h3><br>
+                <img src="images/instacart/issues.png" class="mt-3" alt=""><br><br>
                 <img src="images/instacart/key.png" class="mt-3" alt="">
                 <h3 class="heading">Few Insights from Instacart</h3>
                 <img src="images/instacart/instacart-issue.png" class="mt-3" alt="">
@@ -52,63 +75,64 @@
                 <img src="images/instacart/step3.png" class="mt-3" alt="">
                 <img src="images/instacart/step4.png" class="mt-3" alt="">
                 <h3 class="heading">Result</h3>
-                <img src="images/instacart/final.svg" class="mt-3" alt="">
+                <img src="images/instacart/final.png" class="mt-3" alt="">
+                    
+            </div>
+        </div>
+        
+
+        <footer class="footer mb-2" id="contact">
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-bg"></div>
+                    <h2>Let's connect & <br>build the next idea</h2>
+                    <a href="mailto:hello.pinkynadar@gmail.com" class="flex align-items-center sec-btn mail">
+                        <img src="images/gmail.svg" width="18px" style="margin-right: 4px;" class="icon" alt="">
+                        <span class="flex-grow-1 mt-md-3 mx-md-1">hello.pinkynadar@gmail.com</span>
+                    </a>
+                    <ul class="social-links flex align-items-center">
+                        <li>
+                            <a href="https://www.linkedin.com/in/pinky-nadar-6613b4108/" target="_blank" class="flex align-items-center p-2 p-md-3 linkedin">
+                                <img src="images/linkedin.svg" class="icon" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-2 p-md-3 behance">
+                                <img src="images/behance.svg" class="icon" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dribbble.com/pinky_nadar" target="_blank" class="flex align-items-center p-2 p-md-3 dribble">
+                                <img src="images/dribble.svg" class="icon" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@umamaheshwari4795" target="_blank" class="flex align-items-center p-2 p-md-3 medium">
+                                <img src="images/medium.svg" class="icon" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="" style="margin: 48px 0 0 0">Designed & Developed by Me ❤️</p>
+                </div>
                 
             </div>
-            <!-- Instacart App -->
-
-            <br><br><br>
-            <p class="text-center color2">• • •</p>
-
-            <!-- Contact -->
-            <h3 class="heading" id="contact">Let's Connect</h3>
-            <div class="contact mt-2 mt-md-5">
-                <ul class="flex mx-2-n direction-sm-column">
-                    <li class="flex-item-30 px-2 relative mb-sm-2">
-                        <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-2 p-md-3 behance">
-                            <img src="images/behance.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Behance</span>
-                        </a>
-                    </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="mailto:umamaheshwari4795@gmail.com" class="flex align-items-center p-2 p-md-3 mail">
-                            <img src="images/gmail.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Mail</span>
-                        </a>
-                    </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="https://www.linkedin.com/in/pinky-nadar-6613b4108/" target="_blank" class="flex align-items-center p-2 p-md-3 linkedin">
-                            <img src="images/linkedin.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="https://dribbble.com/pinky_nadar" target="_blank" class="flex align-items-center p-2 p-md-3 dribble">
-                            <img src="images/dribble.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Dribble</span>
-                        </a>
-                    </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="https://medium.com/@umamaheshwari4795" target="_blank" class="flex align-items-center p-2 p-md-3 medium">
-                            <img src="images/medium.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Medium</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Contact -->
-            
-            <br><br><br>
-            <br><br><br>
-            
-        </div>
-        <footer class="footer mb-2">
-        <p class="text-center color2 size12">Designed & Developed by Me ❤️</p>
         </footer>
-        
-        
-        
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/custom.js"></script>
+    
+    <script>
+        SmoothScroll({
+        animationTime : 800,
+        stepSize : 75,
+        accelerationDelta : 30,
+        accelerationMax : 2,
+        keyboardSupport : true,
+        arrowScroll : 50,
+        pulseAlgorithm : true,
+        pulseScale : 4,
+        pulseNormalize : 1,
+        touchpadSupport : true,
+        })
+        </script>
 </html>

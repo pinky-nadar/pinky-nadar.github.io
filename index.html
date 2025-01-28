@@ -7,27 +7,22 @@
         <meta property="og:image" content="images/wimo.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
     </head>
     <body class="relative m-0">
-        <div class="container">
+        
             <!-- Navigation Start -->
-            <nav class="nav-menu flex width-100 relative pb-2 mt-2">
+            <nav class="nav-menu width-100 relative pb-2 mt-2">
                 <div class="menu-content flex align-items-center">
-                    <a href="index.html" class="flex">
-                        <img src="images/medium-avatar.jpg" width="32px" height="32px" class="border-radius-16">
-                        <!-- <h1 class="logo m-0 mx-1">Hi! I am Pinki</h1> -->
+                    <a href="index.html" class="desktop-none mobile-menu">
+                        <img src="images/logo.svg" alt="">                        
                     </a>
-                </div>
-                <div class="menu-content">
-                    <a href="javascript:void(0)" class="desktop-none mobile-menu">
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-x close-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                    </a>
-                    <ul class="flex m-0 p-0 align-items-center mobile-none menu">
-                        <li><a href="index.html" class="p-1 mx-1 size14">Work</a></li>
-                        <li><a href="#about" class="p-1 mx-1 size14">About</a></li>
+                    <ul class="flex links align-items-center mobile-none menu">
+                        <li><a href="#ux" class="p-1 mx-1 size14">Work</a></li>
+                        <li><a href="about.html" class="p-1 mx-1 size14">About</a></li>
+                        <li><a href="writing.html" class="p-1 mx-1 size14">Writings</a></li>
                         <li><a href="#contact" class="p-1 mx-1 size14">Contact</a></li>
                     </ul>
                 </div>
@@ -35,376 +30,170 @@
             <!-- Navigation End -->
 
             <!-- Banner Start -->
-            <div class="mt-2 relative">
-                <video width="100%" class="width-100 border-radius-8 header-img" autoplay muted loop playsinline>
-                    <source src="images/video3.mp4" type="video/mp4">
-                </video>
-                <div class="layer border-radius-8"></div>
-                <h1 class="absolute-center text-center banner-title">Hi!👋 I am Pinki Nadar - UX Designer</h1>
-                <h2 class="absolute-center text-center banner-text">Designing thoughtful experiences that makes a difference</h2>
+            <div class="mt-2 relative background flex justify-content-center direction-column">
+                
+                    <h1 class="text-center banner-title">Hi!👋 I am Pinki Nadar - UX Designer</h1>
+                    <h2 class="text-center banner-text">Designing thoughtful experiences that makes a <span>difference</span></h2>
+                    <div class="flex about">
+                        <div class="me"><img src="images/image.jpg" width="116px" alt=""></div>
+                        <div class="about-me">
+                            <p>I'm an engineer turned designer, blending analytical thinking with creative problem-solving to craft impactful user experiences. From research and brainstorming to prototyping and delivering polished designs, I thrive in every phase of the design process.</p>
+                            <p class="location"><img src="images/location.svg" alt=""><span>Based in New Jersey</span></p>
+                        </div>
+                    </div>
+                
             </div>
             <!-- Banner End -->
+        <div class="container">
+            <!-- solutions start -->
+            <div class="solutions heading">
+                <h2>Delivering Design <br><span>Solutions</span></h2>
+
+                <div class="content flex">
+                    <div class="width-50 ux">
+                        <h3>The invisible handshake between user and product.</h3>
+                        <a href="#ux" class="btn">UX Design</a>
+                    </div>
+                    <div class="width-25 motion">
+                        <img src="images/motion.svg" alt="">
+                        <h3>The silent rhythm that guides and delights users.</h3>
+                        <a href="motion.html" class="sec-btn">Motion Design</a>
+                    </div>
+                    <div class="width-25 graphic">
+                        <img src="images/graphic.svg" alt="">
+                        <h3>The visual language that speaks without words.</h3>
+                        <a href="graphic.html" class="sec-btn">Graphic Design</a>
+                    </div>
+                </div>
+            </div>
+            <!-- solutions ends -->
         </div>
         
-        <!-- Work Start -->
-        <div class="my-6">
-            <!-- <div class="marquee relative flex">
-                <p class="moving-text m-0">&nbsp;Recent Projects &#149;</p>
-                <p class="moving-text m-0">&nbsp;Recent Projects &#149;</p>
-                <p class="moving-text m-0">&nbsp;Recent Projects &#149;</p>
-            </div> -->
+
+        <!-- my work -->
+        <div class="work-bg" id="ux">
+            <div class="container">
+                <div class="work-content">
+                    <h2>My <span>Work</span></h2>
+                    <div class="flex work-layout">
+                        <!-- repeat row -->
+                        <div class="flex work-row">
+                            <div class="content width-40">
+                                <h4 class="project-name">Contract IO</h4>
+                                <p class="project-description">Solved fragmented contract management by designing a centralized dashboard with OCR integration, automating clause extraction, streamlining workflows, and reducing manual effort.</p>
+                                <div class="flex skills">
+                                    <span>Web App</span><span>B2B</span><span>B2C</span><span>UX Design</span><span>Legal</span><span>Worked in team</span>
+                                </div>
+                                <div class="actions flex align-items-center">
+                                    <a href="" class="btn" style="display: none;">Play Overview</a>
+                                    <a href="contract.html" class="btn">Read Case Study</a>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="contract.html">
+                                    <img src="images/contractio.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- repeat row -->
+                        <div class="flex work-row">
+                            <div class="content width-40">
+                                <h4 class="project-name">Wimo</h4>
+                                <p class="project-description">Addressed the challenge of simplifying onboarding for a complex concept, resulting in a 21% increase in user retention.</p>
+                                <div class="flex skills">
+                                    <span>Mobile App</span><span>D2C</span><span>UX Design</span><span>Gaming</span><span>Trading</span><span>Transactional</span><span>Onboarding</span>
+                                </div>
+                                <div class="actions flex align-items-center">
+                                    <a href="" class="btn" style="display: none;">Play Overview</a>
+                                    <a href="wimo.html" class="btn">Read Case Study</a>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="wimo.html">
+                                    <img src="images/wimo.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex work-row">
+                            <div class="content width-40">
+                                <h4 class="project-name">Atomic Design</h4>
+                                <p class="project-description">Solved the challenge of inconsistency and inefficiency by creating a design system with reusable components, faster development, and improved product quality.</p>
+                                <div class="flex skills">
+                                    <span>Web App</span><span>B2B</span><span>UX Design</span><span>Finance</span><span>Design System</span><span>Cannot showcase actual work (NDA)</span>
+                                </div>
+                                <div class="actions flex align-items-center">
+                                    <a href="" class="btn" style="display: none;">Play Overview</a>
+                                    <a href="atomic.html" class="btn">Read Case Study</a>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="atomic.html">
+                                    <img src="images/atomic.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex work-row">
+                            <div class="content width-40">
+                                <h4 class="project-name">InstaCart</h4>
+                                <p class="project-description">Redesigned Instacart's empty state experience to engage users, providing helpful tips and personalized recommendations, transforming idle screens into actionable moments.</p>
+                                <div class="flex skills">
+                                    <span>Mobile App</span><span>Practice</span><span>Empty States</span><span>Illustration</span>
+                                </div>
+                                <div class="actions flex align-items-center">
+                                    <a href="" class="btn" style="display: none;">Play Overview</a>
+                                    <a href="instacart.html" class="btn">Read Case Study</a>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <a href="instacart.html">
+                                    <img src="images/instacart.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Work End -->
-         
-         <div class="container">
-            <!-- Tabs Start -->
-            <div class="work-container">
-                <div class="tabs">
-                    <ul class="flex">
-                        <li><a href="javascript:void(0)" id="tab1" class="p-2 tab-link active">UX Design</a></li>
-                        <li><a href="javascript:void(0)" id="tab2" class="p-2 tab-link">Motion</a></li>
-                        <li><a href="javascript:void(0)" id="tab3" class="p-2 tab-link">Graphic</a></li>
-                        <!-- <li><a href="javascript:void(0)" id="tab4" class="p-2 tab-link">Coming Soon</a></li> -->
-                    </ul>
-                </div>
-                <!-- Tabs Ends -->
-                <!-- Tab Content 1 Start -->
-                <div class="work work1 mt-5 active">
-                    <ul class="flex direction-column">
-                        <li class="mb-sm-2 mb-md-4">
-                            <div class="p-1 border-radius-16">
-                                <!-- <p class="title m-0 pb-2">Contra App</p> -->
-                                <a href="contra.html" class="relative block">
-                                    <img src="images/contra.jpg" class="width-100 border-radius-8" alt="">
-                                    <span>View Project</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="mb-sm-2 mb-md-4">
-                            <div class="p-1 border-radius-16">
-                                <!-- <p class="title m-0 pb-2">Wimo</p> -->
-                                <a href="wimo.html" class="relative block">
-                                    <img src="images/wimo.jpg" class="width-100 border-radius-8" alt="">
-                                    <span>View Project</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="mb-sm-2 mb-md-4">
-                            <div class="p-1 border-radius-16">
-                                <!-- <p class="title m-0 pb-2">Design System</p> -->
-                                <a href="atomic.html" class="relative block">
-                                    <img src="images/atomic.jpg" class="width-100 border-radius-8" alt="">
-                                    <span>View Project</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="mb-sm-2 mb-md-4">
-                            <div class="p-1 border-radius-16">
-                                <!-- <p class="title m-0 pb-2">Design System</p> -->
-                                <a href="instacart.html" class="relative block">
-                                    <img src="images/instacart.jpg" class="width-100 border-radius-8" alt="">
-                                    <span>View Project</span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Tab Content 1 Ends -->
-                <!-- Tab Content 2 Start -->
-                <div class="work work2 mt-5">
-                    <ul class="flex flex-wrap direction-sm-column">
-                        <li class="flex-item-50 mb-4">
-                            <div class="p-2 border-radius-16">
-                                <p class="title m-0 pb-2">Transaction</p>
-                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(1)">
-                                    <img src="images/transaction.png" class="width-100 border-radius-8" alt="">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="flex-item-50">
-                            <div class="p-2 border-radius-16">
-                                <p class="title m-0 pb-2">Dribble Animation</p>
-                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(2)">
-                                    <img src="images/dribble.png" class="width-100 border-radius-8" alt="">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="flex-item-50">
-                            <div class="p-2 border-radius-16">
-                                <p class="title m-0 pb-2">Text Animation</p>
-                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(3)">
-                                    <img src="images/text-animation.jpg" class="width-100 border-radius-8" alt="">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="flex-item-50">
-                            
-                        </li>
-                    </ul>
-                </div>
-                <!-- Tab Content 2 Ends -->
-                <div class="work work3 mt-5">
-                    <ul class="flex flex-wrap">
-                        <li class="flex-item-50 mb-4">
-                            <div class="p-2 border-radius-16">
-                                <p class="title m-0 pb-2">Instacart Illustration</p>
-                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(4)">
-                                    <img src="images/instacart.png" class="width-100 border-radius-8" alt="">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="flex-item-50">
-                            <div class="p-2 border-radius-16">
-                                <p class="title m-0 pb-2">Signage Onboarding</p>
-                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(5)">
-                                    <img src="images/signage.png" class="width-100 border-radius-8" alt="">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="flex-item-50">
-                            <div class="p-2 border-radius-16">
-                                <p class="title m-0 pb-2">Stationery Icons</p>
-                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(6)">
-                                    <img src="images/icon-set.jpg" class="width-100 border-radius-8" alt="">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="flex-item-50">
-                            <div class="p-2 border-radius-16">
-                                <p class="title m-0 pb-2">Iconography</p>
-                                <a href="javascript:void(0);" class="relative block" onclick="openModal();currentSlide(7)">
-                                    <img src="images/icongraphy.jpg" class="width-100 border-radius-8" alt="">
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Tab Content 3 Ends -->
-                <!-- <div class="work work4 mt-5">
-                    <ul class="flex flex-wrap">
-                        <li class="flex-item-50 mb-4">
-                            <div class="p-2 border-radius-16">
-                                <p class="title m-0 pb-2">Calculator</p>
-                                <a href="https://pinky-nadar.github.io/calculator/" target="_blank" class="relative block">
-                                    <img src="images/calc.png" class="width-100 border-radius-8" alt="">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="flex-item-50">
-                            
-                        </li>
-                    </ul>
-                </div> -->
-                <!-- Tab Content 4 Ends -->
-            </div>
-            <!-- Tabs Ends -->
+        <!-- my work -->
 
-
-            <!-- About me -->
-            <h2 class="heading pt-5" id="about"><br>Behind the Design</h2>
-            <div class="about">
-                <div class="about flex mx-2-n direction-sm-column">
-                    <div class="image flex-item-30 px-2">
-                        <div class="relative mb-3">
-                            <img src="images/image.png" alt="">
-                        </div>
-                    </div>
-                    <div class="Content flex-item-70 px-2">
-                        <ul>
-                            <li>✨ Engineer turned Designer</li>
-                            <li>✨ Expert in Front-end Development</li>
-                            <li>✨ Crafting usable interfaces and experience since 2019</li>
-                            <li>✨ Guiding young designers to create a user-friendly interface</li>
-                        </ul>
-                        <br>
-                        <p>I started my career from being a Front-end developer where I have learned solid technical skills. I transitioned to UX Design in 2019 where I got a chance to design the interface for an building inspection reporting application. It motivated me to create usable designs for the end-users. From then, I've been working on the human-centered design principles to create user interfaces with good user experience.</p>
-                        <br>
-                        <p>Tools, frameworks & technologies I have experience working with:</p>
-                        <ul>
-                            <li>- Figma, Adobe XD, Sketch</li>
-                            <li>- Mural, Figjam, Miro, Visio</li>
-                            <li>- Adobe Creative Suite (Photoshop, Illustrator, After Effects)</li>
-                            <li>- Visual Studio Code, Github, Zeplin</li>
-                            <li>- HTML, CSS, JavaScript, React</li>
-                            <li>- Webflow, Framer, WordPress</li>
-                            <li>- UserZoom, Pendo, Loom</li>
-                            <li>- Jira, Notion, Aha!, Trello, Asana</li>
-                            <li>- AI Tools: ChatGPT, Perplexity, Copilot etc.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- About me -->
-            <br><br><br>
-            <!-- Articles start -->
-            <h3 class="heading">Writings</h3>
-            <div class="articles mt-2 mt-md-5">
-                <ul class="flex mx-md-1-n width-100">
-                    <li class="px-md-1 width-100 relative">
-                        <a href="https://medium.com/@umamaheshwari4795/simplifying-checkout-experience-793147a06275" target="_blank" class="flex pb-3 mb-3 align-items-center">
-                            <img src="images/Best Buy Checkout.jpg" class="article-img border-radius-8 mobile-none" alt="">
-                            <div>
-                                <div class="flex-grow-1 article-title">Simplifying Checkout Experience</div>
-                                <p class="color2 size14 my-1">The other day, I was shopping on Best Buy and used the guest checkout option. While navigating through it, I noticed a few opportunities...</p>
-                                <div class="color2 size12 mt-1">2 min read</div>
-                            </div>
-                            <div class="arrow-icon mobile-none">
-                                <img src="images/arrow-connect.svg" alt="">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="px-md-1 width-100 relative">
-                        <a href="https://medium.com/@umamaheshwari4795/mastering-effective-communication-with-stakeholders-bdd353a1bb9b" target="_blank" class="flex pb-3 mb-3 align-items-center direction-sm-column">
-                            <img src="images/medium1.jpg" class="article-img border-radius-8 mobile-none" alt="">
-                            <div>
-                                <div class="flex-grow-1 article-title">Mastering Effective Communication with Stakeholders</div>
-                                <p class="color2 size14 my-1">Let’s get started by sharing some valuable insights I’ve gained from my experience over the past few months, which have greatly benefited both me and my...</p>
-                                <div class="color2 size12 mt-1">2 min read</div>
-                            </div>
-                            <div class="arrow-icon mobile-none">
-                                <img src="images/arrow-connect.svg" alt="">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="px-md-1 width-100 relative">
-                        <a href="https://medium.com/@umamaheshwari4795/design-debt-6505cf22005f" target="_blank" class="flex pb-3 mb-3 align-items-center direction-sm-column">
-                            <img src="images/medium2.jpg" class="article-img border-radius-8 mobile-none" alt="">
-                            <div>
-                                <div class="flex-grow-1 article-title">Design debt is like the hidden clutter in a closet</div>
-                                <p class="color2 size14 my-1">You know the feeling — your team is moving fast, pushing out updates, new features, fixes. But along the way, small trade-offs are made: a quick patch work here, a slight inconsistency...</p>
-                                <div class="color2 size12 mt-1">2 min read</div>
-                            </div>
-                            <div class="arrow-icon mobile-none">
-                                <img src="images/arrow-connect.svg" alt="">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="px-md-1 width-100 relative">
-                        <a href="https://medium.com/@umamaheshwari4795/struggling-with-a-complex-design-system-bb8152f740e9" target="_blank" class="flex pb-3 mb-3 align-items-center">
-                            <img src="images/Design Token.png" class="article-img border-radius-8 mobile-none" alt="">
-                            <div>
-                                <div class="flex-grow-1 article-title">Struggling with a complex design system?</div>
-                                <p class="color2 size14 my-1">Figma’s variable tier structure — Primitive, Semantic, and Component-Specific tiers — comes to the rescue. Each type communicates the what (primitive), how (semantic), and where...</p>
-                                <div class="color2 size12 mt-1">2 min read</div>
-                            </div>
-                            <div class="arrow-icon mobile-none">
-                                <img src="images/arrow-connect.svg" alt="">
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Articles ends -->
-
-            <br><br><br><br><br><br>
-
-            <!-- Mentor -->
-            <div class="mentorship">
-                <div class="four-pointed-star relative">
-                    <img src="images/diamond.svg" alt="">
-                    <img src="images/star.svg" class="star1" alt="">
-                    <img src="images/star.svg" class="star2" alt="">
-                </div>
-                
-                <p class="color2">Empowering young deigners towards building confidence in their design decisions by creating a space where they felt heard and supported. Encouraged them to explore their ideas while providing actionable feedback that refined their work.</p>
-                <p class="color2">Watching them grow into confident professionals has been one of the most rewarding parts of my journey.</p>
-            </div>
-            <!-- Mentor Ends -->
-            <br><br><br>
-            <!-- Certifications starts -->
-            <h3 class="heading">Certifications</h3>
-            <div class="certi">
-                <ul class="flex flex-wrap mx-2-n">
-                    <li class="flex-item-25 mb-4">
-                        <div class="p-2 border-radius-16">
-                            
-                            <a href="https://www.interaction-design.org/members/pinky-nadar/certificate/course/6fb07a8e-df3f-4dcf-8afc-ed762647dfd3" target="_blank" class="relative block">
-                                <img src="https://www.interaction-design.org/certificates/course/6fb07a8e-df3f-4dcf-8afc-ed762647dfd3/large" class="width-100 border-radius-8" alt="">
-                            </a>
-                            <p class="title m-0 pt-2">Gestalt Psychology and Web Design: The Ultimate Guide</p>
-                        </div>
-                    </li>
-                    <li class="flex-item-25">
-                        <div class="p-2 border-radius-16">
-                            
-                            <a href="https://www.interaction-design.org/members/pinky-nadar/certificate/course/8c60c0ca-2001-48a5-85a7-7b4a208a5e93" target="_blank" class="relative block">
-                                <img src="https://www.interaction-design.org/certificates/course/8c60c0ca-2001-48a5-85a7-7b4a208a5e93/large" class="width-100 border-radius-8" alt="">
-                            </a>
-                            <p class="title m-0 pt-2">Interaction Design for Usability</p>
-                        </div>
-                    </li>
-                    <li class="flex-item-25">
-                        <div class="p-2 border-radius-16">
-                            
-                            <a href="https://www.interaction-design.org/members/pinky-nadar/certificate/course/2fa26831-345e-483f-8f12-757503562120" target="_blank" class="relative block">
-                                <img src="https://www.interaction-design.org/certificates/course/2fa26831-345e-483f-8f12-757503562120/large" class="width-100 border-radius-8" alt="">
-                            </a>
-                            <p class="title m-0 pt-2"> AI for Designers</p>
-                        </div>
-                    </li>
-                    <li class="flex-item-25">
-                        <div class="p-2 border-radius-16">
-                            
-                            <a href="https://www.interaction-design.org/members/pinky-nadar/certificate/course/240e5aae-58e3-49b1-b77f-c3c3f2700168" target="_blank" class="relative block">
-                                <img src="https://www.interaction-design.org/certificates/course/240e5aae-58e3-49b1-b77f-c3c3f2700168/large" class="width-100 border-radius-8" alt="">
-                            </a>
-                            <p class="title m-0 pt-2">Visual Design: The Ultimate Guide</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- Certifications ends -->
-
-            <br><br>
-            <p class="text-center color2">• • •</p>
-
-            <!-- Contact -->
-            <h3 class="heading" id="contact">Let's Connect</h3>
-            <p class="title m-0 pt-2 flex"><span style="margin-right: 8px;"><img src="images/map-pin.svg" alt=""></span>Based in New Jersey, open to work across the USA</p>
-            <div class="contact mt-2 mt-md-5">
-                <ul class="flex mx-2-n direction-sm-column">
-                    <li class="flex-item-30 px-2 relative mb-sm-2">
-                        <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-2 p-md-3 behance">
-                            <img src="images/behance.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Behance</span>
-                        </a>
-                    </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="mailto:hello.pinkynadar@gmail.com" class="flex align-items-center p-2 p-md-3 mail">
-                            <img src="images/gmail.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Mail</span>
-                        </a>
-                    </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
+        
+        <footer class="footer mb-2" id="contact">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-bg"></div>
+                <h2>Let's connect & <br>build the next idea</h2>
+                <a href="mailto:hello.pinkynadar@gmail.com" class="flex align-items-center sec-btn mail">
+                    <img src="images/gmail.svg" width="18px" style="margin-right: 4px;" class="icon" alt="">
+                    <span class="flex-grow-1 mt-md-3 mx-md-1">hello.pinkynadar@gmail.com</span>
+                </a>
+                <ul class="social-links flex align-items-center">
+                    <li>
                         <a href="https://www.linkedin.com/in/pinky-nadar-6613b4108/" target="_blank" class="flex align-items-center p-2 p-md-3 linkedin">
                             <img src="images/linkedin.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">LinkedIn</span>
                         </a>
                     </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
+                    <li>
+                        <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-2 p-md-3 behance">
+                            <img src="images/behance.svg" class="icon" alt="">
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://dribbble.com/pinky_nadar" target="_blank" class="flex align-items-center p-2 p-md-3 dribble">
                             <img src="images/dribble.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Dribble</span>
                         </a>
                     </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
+                    <li>
                         <a href="https://medium.com/@umamaheshwari4795" target="_blank" class="flex align-items-center p-2 p-md-3 medium">
                             <img src="images/medium.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Medium</span>
                         </a>
                     </li>
                 </ul>
+                <p class="" style="margin: 48px 0 0 0">Designed & Developed by Me ❤️</p>
             </div>
-            <!-- Contact -->
             
-            <br><br><br>
-            <br><br><br>
-            
-         </div>
-         <footer class="footer mb-2">
-            <p class="text-center color2 size12">Designed & Developed by Me ❤️</p>
-         </footer>
-         <div id="myModal" class="modal">
+        </div>
+        </footer>
+        <!-- <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
                 <div class="mySlides text-center">
@@ -429,7 +218,7 @@
                     <img src="images/icongraphy.jpg">
                 </div>
             </div>
-        </div>
+        </div> -->
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/custom.js"></script>
@@ -471,4 +260,18 @@
         //   captionText.innerHTML = dots[slideIndex-1].alt;
         }
     </script>
+    <script>
+        SmoothScroll({
+        animationTime : 800,
+        stepSize : 75,
+        accelerationDelta : 30,
+        accelerationMax : 2,
+        keyboardSupport : true,
+        arrowScroll : 50,
+        pulseAlgorithm : true,
+        pulseScale : 4,
+        pulseNormalize : 1,
+        touchpadSupport : true,
+        })
+        </script>
 </html>

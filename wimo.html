@@ -3,37 +3,63 @@
         <title>Pinki Nadar</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Pinki Nadar - UX Designer" />
+        <meta property="og:image" content="images/wimo.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
     </head>
-    <body class="relative m-0">
-        <div class="container">
+    <body class="relative m-0 inner-page-body">
+        
             <!-- Navigation Start -->
-            <nav class="nav-menu flex width-100 relative pb-2 mt-2">
+            <nav class="nav-menu width-100 relative pb-2 mt-2">
                 <div class="menu-content flex align-items-center">
-                    <a href="index.html" class="flex">
-                        <img src="images/medium-avatar.jpg" width="32px" height="32px" class="border-radius-16">
-                        <!-- <h1 class="logo m-0 mx-1">Hi! I am Pinki</h1> -->
+                    <a href="index.html" class="desktop-none mobile-menu">
+                        <img src="images/logo.svg" alt="">                        
                     </a>
-                </div>
-                <div class="menu-content">
-                    <a href="javascript:void(0)" class="desktop-none mobile-menu">
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-x close-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                    </a>
-                    <ul class="flex m-0 p-0 align-items-center mobile-none menu">
-                        <li><a href="index.html" class="p-1 mx-1 size14">Work</a></li>
-                        <li><a href="index.html#about" class="p-1 mx-1 size14">About</a></li>
+                    <ul class="flex links align-items-center mobile-none menu">
+                        <li><a href="index.html#ux" class="p-1 mx-1 size14">Work</a></li>
+                        <li><a href="about.html" class="p-1 mx-1 size14">About</a></li>
+                        <li><a href="writing.html" class="p-1 mx-1 size14">Writings</a></li>
                         <li><a href="#contact" class="p-1 mx-1 size14">Contact</a></li>
                     </ul>
                 </div>
             </nav>
             <!-- Navigation End -->
+
+            <!-- Banner Start -->
+            <div class="mt-2 relative background flex justify-content-center direction-column page-banner">
+                    <h2 class="text-center banner-text">Wimo <span>Mobile App</span></h2>
+
+                    
+            </div>
+            <!-- Banner End -->
+        <div class="container">
             <div class="card-look">
                 <!-- Wimo App -->
-                <img src="images/wimo/banner.jpg" class="border-radius-8 banner-img" alt="">
+                <div class="flex space-between team-overview">
+                    <div>
+                        <h4>Team</h4>
+                        <ul>
+                            <li>CEO</li>
+                            <li>Product Manager</li>
+                            <li>Marketing Head</li>
+                            <li>Developers</li>
+                            <li>Designer (Me)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Duration</h4>
+                        <p>7 Months</p>
+                    </div>
+                    <div>
+                        <h4>Tools</h4>
+                        <p>Figma, Slack, Google Meet, Witeboard.io, mindmiester, FigJam, Motion App</p>
+                    </div>
+                </div>
+                
                 <h3 class="mt-0 heading">Wimo App</h3>
                 <p>Wimo lets you take opinions on your favorite future events with a simple Yes or No. As the event outcome is declared, you validate your opinion or figure out the truth with rewards!</p>
                 <h3 class="heading">Why do we need?</h3>
@@ -49,28 +75,28 @@
                 <h3 class="heading">Process</h3>
                 <p>Started the project communicating with client on their requirements and based on that I started researching about the case. I gathered few user insights from the competitors apps. What they are good at and what needs to be improved. Based on that ideas were created and designs were made. Finally, the designs were tested to the user groups and we received feedback.</p>
                 <img src="images/wimo/process.jpg" alt="">
-                <h3 class="heading">Target Audience</h3>
+                <h3 class="heading">Target Audience</h3><br>
                 <img src="images/wimo/audience.png" class="mt-3" alt="">
                 <h3 class="heading">Research</h3>
                 <div class="flex align-items-center direction-sm-column">
                     <div class="content flex-item-50">
-                        <p>We had brainstorming session with client & team during the initial stage of the project, where I tried to understand the user base, business goals what are going to be the expectations from each one of us for this project.</p>
-                        <p>Research data was shared by the client & I studied that to utilize in the project.</p>
-                        <p>I did competitor analysis, the apps that are working in the same category, noted their plus points & minus points. And how Wimo can offer more then them.</p>
+                        <p>We had brainstorming session with client &amp; team during the initial stage of the project, where I tried to understand the user base, business goals what are going to be the expectations from each one of us for this project.</p>
+                        <p>Research data was shared by the client &amp; I studied that to utilize in the project.</p>
+                        <p>I did competitor analysis, the apps that are working in the same category, noted their plus points &amp; minus points. And how Wimo can offer more then them.</p>
                     </div>
                     <div class="image flex-item-50 text-center">
-                        <video width="100%" class="width-70 border-radius-16" autoplay muted>
+                        <video width="100%" class="width-70 border-radius-16" autoplay="" muted="">
                             <source src="images/wimo/idea.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
-                <h3 class="heading">Storyboarding</h3>
+                <h3 class="heading">Storyboarding</h3><br>
                 <img src="images/wimo/storyboarding.jpg" class="mt-3" alt="">
                 <h3 class="heading">Mind Mapping</h3>
                 <div class="flex direction-sm-column">
                     <div class="content flex-item-50 pr-2">
-                        <p>Started with mind mapping, we had our core feature which is to select an event and trade. Kept this core in center and I gathered branches based on that. And further divided them to sub tasks which in the end became a hierarchical & interconnected structure.</p>
-                        <p>It’s a creative & logical way to brainstorm which helped me to generate, structure & analyze ideas visually.</p>
+                        <p>Started with mind mapping, we had our core feature which is to select an event and trade. Kept this core in center and I gathered branches based on that. And further divided them to sub tasks which in the end became a hierarchical &amp; interconnected structure.</p>
+                        <p>It’s a creative &amp; logical way to brainstorm which helped me to generate, structure &amp; analyze ideas visually.</p>
                         <p>Additionally, it helps to move ahead with the next step which is information architechture.</p>
                     </div>
                     <div class="image flex-item-50">
@@ -78,12 +104,12 @@
                     </div>
                 </div>
                 <h3 class="heading">Wireframes</h3>
-                <p>Picked up the core flow of the app & started to begin with it since the flow will be done on recurring basis by the user so, we thought to prioritize this flow & have seamless experience.</p>
+                <p>Picked up the core flow of the app &amp; started to begin with it since the flow will be done on recurring basis by the user so, we thought to prioritize this flow &amp; have seamless experience.</p>
                 <p>Once the core wire-frame built, I converted it to interactive prototype and tested with few users to gather their insights.</p>
                 <p>The overall feedback was good. One of the most common feedback was to give a bit context about the flow for the users who doesn’t have any trading knowledge. Later we improvised on this feedback in the onboarding part.</p>
                 <img src="images/wimo/wireframe.png" class="mt-2" alt="">
                 <h3 class="heading">Moodboard</h3>
-                <p>Mood board helps establishing the visual direction of the product. I gathered various visual elements, such colors, textures, images & typography. With these I explored different styles & aesthetics.</p>
+                <p>Mood board helps establishing the visual direction of the product. I gathered various visual elements, such colors, textures, images &amp; typography. With these I explored different styles &amp; aesthetics.</p>
                 <img src="images/wimo/moodboard.png" alt="">
                 <h3 class="heading">Visuals</h3>
                 <img src="images/wimo/visual.png" alt="">
@@ -96,61 +122,64 @@
                 
                 <img src="images/wimo/end.png" class="mt-3" alt="">
                 <h3 class="heading">Onboarding Test Prototype</h3> 
-                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" class="mt-3" src="https://embed.figma.com/proto/U5GIJFH8hIrWKBRrlxWKRK/Wimo-Onboarding?page-id=0%3A1&node-id=1-18&node-type=canvas&viewport=484%2C330%2C0.12&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A441&embed-host=share" allowfullscreen></iframe>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" class="mt-3" src="https://embed.figma.com/proto/U5GIJFH8hIrWKBRrlxWKRK/Wimo-Onboarding?page-id=0%3A1&amp;node-id=1-18&amp;node-type=canvas&amp;viewport=484%2C330%2C0.12&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A441&amp;embed-host=share" allowfullscreen=""></iframe>
             </div>
-            <!-- Wimo App -->
-            
-            <br><br><br>
-            <p class="text-center color2">• • •</p>
-            <!-- Contact -->
-            <h3 class="heading" id="contact">Let's Connect</h3>
-            <div class="contact mt-2 mt-md-5">
-                <ul class="flex mx-2-n direction-sm-column">
-                    <li class="flex-item-30 px-2 relative mb-sm-2">
-                        <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-2 p-md-3 behance">
-                            <img src="images/behance.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Behance</span>
-                        </a>
-                    </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="mailto:umamaheshwari4795@gmail.com" class="flex align-items-center p-2 p-md-3 mail">
-                            <img src="images/gmail.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Mail</span>
-                        </a>
-                    </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="https://www.linkedin.com/in/pinky-nadar-6613b4108/" target="_blank" class="flex align-items-center p-2 p-md-3 linkedin">
-                            <img src="images/linkedin.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="https://dribbble.com/pinky_nadar" target="_blank" class="flex align-items-center p-2 p-md-3 dribble">
-                            <img src="images/dribble.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Dribble</span>
-                        </a>
-                    </li>
-                    <li class="flex-item-30 px-2 mb-sm-2">
-                        <a href="https://medium.com/@umamaheshwari4795" target="_blank" class="flex align-items-center p-2 p-md-3 medium">
-                            <img src="images/medium.svg" class="icon" alt="">
-                            <span class="flex-grow-1 mt-md-3 mx-md-1">Medium</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Contact -->
-            
-            <br><br><br>
-            <br><br><br>
-            
         </div>
-        <footer class="footer mb-2">
-        <p class="text-center color2 size12">Designed & Developed by Me ❤️</p>
+        
+
+        
+        <footer class="footer mb-2" id="contact">
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-bg"></div>
+                    <h2>Let's connect & <br>build the next idea</h2>
+                    <a href="mailto:hello.pinkynadar@gmail.com" class="flex align-items-center sec-btn mail">
+                        <img src="images/gmail.svg" width="18px" style="margin-right: 4px;" class="icon" alt="">
+                        <span class="flex-grow-1 mt-md-3 mx-md-1">hello.pinkynadar@gmail.com</span>
+                    </a>
+                    <ul class="social-links flex align-items-center">
+                        <li>
+                            <a href="https://www.linkedin.com/in/pinky-nadar-6613b4108/" target="_blank" class="flex align-items-center p-2 p-md-3 linkedin">
+                                <img src="images/linkedin.svg" class="icon" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/pinkynadar" target="_blank" class="flex align-items-center p-2 p-md-3 behance">
+                                <img src="images/behance.svg" class="icon" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dribbble.com/pinky_nadar" target="_blank" class="flex align-items-center p-2 p-md-3 dribble">
+                                <img src="images/dribble.svg" class="icon" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@umamaheshwari4795" target="_blank" class="flex align-items-center p-2 p-md-3 medium">
+                                <img src="images/medium.svg" class="icon" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="" style="margin: 48px 0 0 0">Designed & Developed by Me ❤️</p>
+                </div>
+                
+            </div>
         </footer>
-        
-        
-        
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/custom.js"></script>
+    
+    <script>
+        SmoothScroll({
+        animationTime : 800,
+        stepSize : 75,
+        accelerationDelta : 30,
+        accelerationMax : 2,
+        keyboardSupport : true,
+        arrowScroll : 50,
+        pulseAlgorithm : true,
+        pulseScale : 4,
+        pulseNormalize : 1,
+        touchpadSupport : true,
+        })
+        </script>
 </html>
