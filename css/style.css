@@ -672,3 +672,7 @@ ul.result-block{
 /* Inner page common CSS */
 /* ---------- */
 /* --------- */
+
+#besucherzaehler2{
+    display: none;
+}
