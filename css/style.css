@@ -39,6 +39,9 @@ ul,li{
     margin: 0;
     padding: 0;
 }
+.text-center{
+    text-align: center;
+}
 .container{
     max-width: 1400px;
     margin: 0 auto;
@@ -47,6 +50,18 @@ ul,li{
     }
     @media screen and (max-width: 767px) {
         max-width: 90%;
+    }
+}
+.column-m-row{
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+}
+.basis-50{
+    flex-basis: 100%;
+    @media screen and (min-width: 1200px) {
+        flex-basis: 50%;
     }
 }
 .heading, h2{
@@ -547,6 +562,10 @@ ul,li{
         margin-right: 8px;
         vertical-align: baseline;
     }
+    .alert li:before{
+        content: '';
+        background: url(../images/alert.svg);
+    }
 }   
 ul.result-block{
     margin: 24px -16px 0 -16px;
@@ -667,6 +686,24 @@ ul.result-block{
         font-weight: 600;
         color: var(--primary-text);
         margin-top: 16px;
+    }
+}
+.bg-apply{
+    margin-top: 24px;
+    border-radius: 16px;
+    background-color: var(--support-blue);
+    clip-path: content-box;
+
+    .content{
+        padding-top: 24px;
+
+        *{
+            padding: 0 40px;
+        }
+    }
+    video{
+        height: 400px;
+        object-fit: cover;
     }
 }
 /* Inner page common CSS */
